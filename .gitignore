@@ -1,0 +1,8 @@
+
+/.idea
+/venvs
+/dist
+/__pycache__/
+/mg_socket/__pycache__/
+mg_socket.bin
+/mg_socket/main.build  
