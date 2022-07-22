@@ -1,7 +1,11 @@
 import socket
+import sys
+from pprint import pprint
+
+pprint(sys.path)
 
 from datalink_levl.client_datalink import _UdsClient, _Ip4Client
-from datalink_levl.helpful import send, recv, recvfrom
+from helpful import send, recv, recvfrom
 from transport_levl.client_transport import UdpClient, TcpClient
 
 
@@ -133,7 +137,7 @@ class Ip4TcpClient(_Ip4Client, TcpClient):
 
 
 if __name__ == '__main__':
-    UdsTcpClient("./ech.socket").main_loop()
+    UdsTcpClient("./echs.socket").main_loop()
     # UdsUdpClient("./ech.socket").main_loop()
     #
     # Ip4TcpClient("127.0.0.1", 8919).main_loop()

@@ -1,2 +1,2 @@
-from .datalink_levl import *
-from .transport_levl import *
+from . import datalink_levl
+from . import transport_levl

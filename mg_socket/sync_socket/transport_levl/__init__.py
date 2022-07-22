@@ -1,2 +1,2 @@
-from .client_transport import *
-from .server_transport import *
+from . import client_transport
+from . import server_transport

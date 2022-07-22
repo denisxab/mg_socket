@@ -1,5 +1,5 @@
-from async_socket.transport_levl.server_transport import ServerIpAsync
 from general_settings import host, port
+from transport_levl.server_transport import ServerIpAsync
 
 
 async def echo_server(message: str) -> str:
