@@ -1,8 +1,4 @@
 import socket
-import sys
-from pprint import pprint
-
-pprint(sys.path)
 
 from datalink_levl.client_datalink import _UdsClient, _Ip4Client
 from helpful import send, recv, recvfrom

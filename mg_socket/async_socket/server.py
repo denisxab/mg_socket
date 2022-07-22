@@ -1,7 +1,14 @@
-from general_settings import host, port
-from transport_levl.server_transport import ServerIpAsync
+from norm_import import iimport
+
+from transport_levl import ServerIpAsync
+
+host, port = iimport(__file__, 1, 'general_settings').From('host', 'port')
+general_settings = iimport(__file__, 1, 'general_settings').module
 
 
+# ImportError: attempted relative import with no known parent package
+# ModuleNotFoundError: No module named 'server_transport'
+# ImportError: cannot import name 'ServerIpAsync' from 'transport_level'
 async def echo_server(message: str) -> str:
     return message
 
